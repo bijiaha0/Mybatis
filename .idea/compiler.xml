@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Annotation" />
+        <module name="cache" />
+        <module name="DynamicSQL" />
+        <module name="EstablishMybatisDev" />
+        <module name="MulToMulReflect" />
+        <module name="MybatisBaseOperation" />
+        <module name="OneToMulReflect" />
+        <module name="OneTwoOneReflect" />
+        <module name="recognizer" />
+        <module name="SpringMybatisDev" />
+        <module name="SpringMybatisEnv" />
+        <module name="SpringMybatisSpringMVC" />
+        <module name="SSMFinally" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="EstablishMybatisDevelopmentEnvironment" target="1.8" />
+      <module name="OneToOneReflect" target="1.8" />
+      <module name="SpringMybatisSpringMVC" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

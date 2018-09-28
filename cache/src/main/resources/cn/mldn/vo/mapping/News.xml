@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mldn.vo.mapping.NewsNS">
+	<cache eviction="LRU" flushInterval="10000" readOnly="true" size="512"/>
+	<resultMap type="News" id="NewsMap">
+		<id column="nid" property="nid"/>	<!-- 定义类中的属性与表id的关系 -->
+		<result column="title" property="title"/>
+		<result column="pub_date" property="pubdate"/>
+	</resultMap>
+	<!-- 定义要进行数据追加操作的SQL语句，每一个SQL都需要有一个自己独立的ID，这个ID为程序引用 --> 
+	<insert id="doCreate" parameterType="News" keyProperty="nid" useGeneratedKeys="true"> 
+		INSERT INTO news(title,pub_date) VALUES (#{title},#{pubdate}) ;
+	</insert>
+	
+	<select id="findAllSplit" parameterType="java.util.Map" resultMap="NewsMap" useCache="false">
+		SELECT nid,title,pub_date FROM news
+		WHERE ${column} LIKE #{keyWord} LIMIT #{start},#{lineSize} 
+	</select> 
+	
+	<select id="getAllCount" parameterType="java.util.Map" resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM news WHERE ${column} LIKE #{keyWord}  
+	</select>
+	
+	<select id="findById3" parameterType="java.lang.Integer" resultMap="NewsMap">
+		SELECT nid,title,pub_date FROM news WHERE nid=#{nid} 
+	</select>
+	
+	<select id="findAll" resultMap="NewsMap">
+		SELECT nid,title,pub_date FROM news  
+	</select>
+
+	<!-- 定义数据的查询处理，查询之后所有的数据要求以resultType定义的类型返回 -->
+	<select id="findById" parameterType="java.lang.Integer" resultType="News">
+		SELECT nid,title,pub_date FROM news WHERE nid=#{nid}
+	</select>
+	<!-- 定义数据的查询处理，查询之后所有的数据要求以resultType定义的类型返回 -->
+	<select id="findById2" parameterType="java.lang.Integer" resultType="News">
+		SELECT nid,title,pub_date AS pubdate FROM news WHERE nid=#{nid}
+	</select> 
+	<update id="doUpdate" parameterType="News">
+		UPDATE news SET title=#{title} WHERE nid=#{nid}
+	</update>
+	<!-- 要删除数据则肯定会以新闻编号为主，新闻编号属于整型数据 -->
+	<delete id="doRemove" parameterType="java.lang.Integer">
+		DELETE FROM news WHERE nid=#{my_nid_haha}
+	</delete>
+</mapper>

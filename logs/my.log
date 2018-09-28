@@ -1,0 +1,100 @@
+2018-09-27 14:24:30,134 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:24:30,360 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:24:30,386 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 10(Integer)
+2018-09-27 14:24:30,402 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:24:30,408 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 10, mldn-bjh  - 919, 2018-09-27 13:14:58.0
+2018-09-27 14:24:30,409 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:24:30,412 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:24:30,413 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:24:30,413 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 10(Integer)
+2018-09-27 14:24:30,413 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:24:30,413 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 10, mldn-bjh  - 919, 2018-09-27 13:14:58.0
+2018-09-27 14:24:30,414 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:25:04,291 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:25:04,495 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:25:04,525 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 10(Integer)
+2018-09-27 14:25:04,539 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:25:04,544 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 10, mldn-bjh  - 919, 2018-09-27 13:14:58.0
+2018-09-27 14:25:04,544 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:25:04,548 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.5
+2018-09-27 14:25:20,892 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:25:21,083 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:25:21,107 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 10(Integer)
+2018-09-27 14:25:21,122 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:25:21,128 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 10, mldn-bjh  - 919, 2018-09-27 13:14:58.0
+2018-09-27 14:25:21,129 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:25:21,133 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.5
+2018-09-27 14:25:44,502 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:25:44,691 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:25:44,715 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 10(Integer)
+2018-09-27 14:25:44,732 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:25:44,737 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 10, mldn-bjh  - 919, 2018-09-27 13:14:58.0
+2018-09-27 14:25:44,739 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:25:44,742 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.5
+2018-09-27 14:39:04,487 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title=? 
+2018-09-27 14:39:04,519 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - ==> Parameters: 世界和平(String)
+2018-09-27 14:39:04,535 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==      Total: 0
+2018-09-27 14:41:37,923 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 14:41:37,949 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: null, -5(Integer), -5(Integer)
+2018-09-27 14:41:49,527 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:41:49,554 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - ==> Parameters: 10(Integer)
+2018-09-27 14:41:49,569 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==    Columns: nid, title, pub_date
+2018-09-27 14:41:49,573 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 10, mldn-bjh  - 919, 2018-09-27 13:14:58.0
+2018-09-27 14:41:49,574 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==      Total: 1
+2018-09-27 14:43:09,205 DEBUG [cn.mldn.vo.mapping.NewsNS.doUpdate] - ==>  Preparing: UPDATE news SET title = ? 
+2018-09-27 14:43:09,228 DEBUG [cn.mldn.vo.mapping.NewsNS.doUpdate] - ==> Parameters: 世界混乱了。(String)
+2018-09-27 14:43:09,228 DEBUG [cn.mldn.vo.mapping.NewsNS.doUpdate] - <==    Updates: 13
+2018-09-27 14:44:35,091 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 14:44:35,118 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: null, 5(Integer), 5(Integer)
+2018-09-27 14:44:35,131 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 0
+2018-09-27 14:44:40,787 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 14:44:40,811 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: null, 1(Integer), 5(Integer)
+2018-09-27 14:44:40,826 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 0
+2018-09-27 14:47:55,094 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 14:47:55,120 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: 世界(String), 1(Integer), 5(Integer)
+2018-09-27 14:47:55,135 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 0
+2018-09-27 14:48:13,815 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 14:48:13,845 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: 世界混乱了。(String), 1(Integer), 5(Integer)
+2018-09-27 14:48:13,865 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, pub_date
+2018-09-27 14:48:13,877 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 3, 世界混乱了。, 2018-09-27 12:54:47.0
+2018-09-27 14:48:13,878 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 4, 世界混乱了。, 2018-09-27 13:11:46.0
+2018-09-27 14:48:13,879 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 5, 世界混乱了。, 2018-09-27 13:11:52.0
+2018-09-27 14:48:13,879 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 6, 世界混乱了。, 2018-09-27 13:11:56.0
+2018-09-27 14:48:13,879 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 7, 世界混乱了。, 2018-09-27 13:12:02.0
+2018-09-27 14:48:13,880 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 5
+2018-09-27 14:50:55,570 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title=? 
+2018-09-27 14:50:55,596 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - ==> Parameters: 世界和平(String)
+2018-09-27 14:50:55,611 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==      Total: 0
+2018-09-27 14:51:07,843 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title=? 
+2018-09-27 14:51:07,869 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - ==> Parameters: 世界混乱了。(String)
+2018-09-27 14:51:07,884 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==    Columns: nid, title, pub_date
+2018-09-27 14:51:07,889 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 2, 世界混乱了。, 2018-09-27 12:46:59.0
+2018-09-27 14:51:07,891 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 3, 世界混乱了。, 2018-09-27 12:54:47.0
+2018-09-27 14:51:07,891 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 4, 世界混乱了。, 2018-09-27 13:11:46.0
+2018-09-27 14:51:07,891 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 5, 世界混乱了。, 2018-09-27 13:11:52.0
+2018-09-27 14:51:07,891 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 6, 世界混乱了。, 2018-09-27 13:11:56.0
+2018-09-27 14:51:07,892 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 7, 世界混乱了。, 2018-09-27 13:12:02.0
+2018-09-27 14:51:07,894 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 8, 世界混乱了。, 2018-09-27 13:12:08.0
+2018-09-27 14:51:07,894 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 9, 世界混乱了。, 2018-09-27 13:14:54.0
+2018-09-27 14:51:07,894 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 10, 世界混乱了。, 2018-09-27 13:14:58.0
+2018-09-27 14:51:07,894 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 11, 世界混乱了。, 2018-09-27 13:15:06.0
+2018-09-27 14:51:07,894 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 12, 世界混乱了。, 2018-09-27 13:15:12.0
+2018-09-27 14:51:07,895 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 13, 世界混乱了。, 2018-09-27 13:15:18.0
+2018-09-27 14:51:07,895 TRACE [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==        Row: 14, 世界混乱了。, 2018-09-27 13:15:23.0
+2018-09-27 14:51:07,895 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllByTitle] - <==      Total: 13
+2018-09-27 15:28:09,401 DEBUG [cn.mldn.vo.mapping.MemberLoginNS.doCreate] - ==>  Preparing: INSERT INTO member_login(mid,password) VALUES (?,?) ; 
+2018-09-27 15:28:09,431 DEBUG [cn.mldn.vo.mapping.MemberLoginNS.doCreate] - ==> Parameters: hello(String), www.mldnjava.cn(String)
+2018-09-27 15:28:09,432 DEBUG [cn.mldn.vo.mapping.MemberLoginNS.doCreate] - <==    Updates: 1
+2018-09-27 15:28:09,433 DEBUG [cn.mldn.vo.mapping.MemberDetailsNS.doCreate] - ==>  Preparing: INSERT INTO member_details(mid,name,age) VALUES (?,?,?) ; 
+2018-09-27 15:28:09,433 DEBUG [cn.mldn.vo.mapping.MemberDetailsNS.doCreate] - ==> Parameters: hello(String), 小李(String), 10(Integer)
+2018-09-27 15:28:09,434 DEBUG [cn.mldn.vo.mapping.MemberDetailsNS.doCreate] - <==    Updates: 1
+2018-09-27 15:28:46,307 DEBUG [cn.mldn.vo.mapping.MemberLoginNS.findById] - ==>  Preparing: SELECT mid,password FROM member_login WHERE mid=? 
+2018-09-27 15:28:46,335 DEBUG [cn.mldn.vo.mapping.MemberLoginNS.findById] - ==> Parameters: hello(String)
+2018-09-27 15:28:46,350 TRACE [cn.mldn.vo.mapping.MemberLoginNS.findById] - <==    Columns: mid, password
+2018-09-27 15:28:46,350 TRACE [cn.mldn.vo.mapping.MemberLoginNS.findById] - <==        Row: hello, www.mldnjava.cn
+2018-09-27 15:28:46,352 DEBUG [cn.mldn.vo.mapping.MemberDetailsNS.findById] - ====>  Preparing: SELECT mid,name,age FROM member_details WHERE mid=? 
+2018-09-27 15:28:46,352 DEBUG [cn.mldn.vo.mapping.MemberDetailsNS.findById] - ====> Parameters: hello(String)
+2018-09-27 15:28:46,353 TRACE [cn.mldn.vo.mapping.MemberDetailsNS.findById] - <====    Columns: mid, name, age
+2018-09-27 15:28:46,353 TRACE [cn.mldn.vo.mapping.MemberDetailsNS.findById] - <====        Row: hello, 小李, 10
+2018-09-27 15:28:46,354 DEBUG [cn.mldn.vo.mapping.MemberDetailsNS.findById] - <====      Total: 1
+2018-09-27 15:28:46,354 DEBUG [cn.mldn.vo.mapping.MemberLoginNS.findById] - <==      Total: 1

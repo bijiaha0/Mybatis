@@ -1,0 +1,374 @@
+2018-09-27 12:40:53,789 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) ; 
+2018-09-27 12:40:53,824 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - ==> Parameters: mldn - f(String), 小李(String), 15(Integer), 500.0(Double), 2018-09-27 12:40:53.339(Timestamp), www.mldnjava.cn(String)
+2018-09-27 12:40:53,825 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - <==    Updates: 1
+2018-09-27 12:40:53,825 INFO [cn.mldn.test.TestMemberInsert] - 数据更新行数：1
+2018-09-27 12:45:24,903 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) ; 
+2018-09-27 12:45:24,939 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - ==> Parameters: mldn - f(String), 小李(String), 15(Integer), 500.0(Double), 2018-09-27 12:45:24.473(Timestamp), www.mldnjava.cn(String)
+2018-09-27 12:46:00,424 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) ; 
+2018-09-27 12:46:00,461 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - ==> Parameters: mldn - f(String), 小李(String), 15(Integer), 500.0(Double), 2018-09-27 12:45:59.971(Timestamp), www.mldnjava.cn(String)
+2018-09-27 12:46:27,812 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name,age,salary,birthday,note) VALUES (?,?,?,?,?,?) ; 
+2018-09-27 12:46:27,845 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - ==> Parameters: mldn - f--(String), 小李(String), 15(Integer), 500.0(Double), 2018-09-27 12:46:27.394(Timestamp), www.mldnjava.cn(String)
+2018-09-27 12:46:27,846 DEBUG [cn.mldn.vo.mapping.MemberNS.doCreate] - <==    Updates: 1
+2018-09-27 12:46:27,846 INFO [cn.mldn.test.TestMemberInsert] - 数据更新行数：1
+2018-09-27 12:46:39,441 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 12:46:39,479 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: MLDN  - 6052909(String), 2018-09-27 12:46:39.033(Timestamp)
+2018-09-27 12:46:39,479 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 12:46:39,481 INFO [cn.mldn.test.NewsTest] - News [nid=1, title=MLDN  - 6052909, pubdate=Thu Sep 27 12:46:39 CST 2018]
+2018-09-27 12:46:59,794 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 12:46:59,826 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: MLDN  - 6753630(String), 2018-09-27 12:46:59.416(Timestamp)
+2018-09-27 12:46:59,827 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 12:46:59,829 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 12:54:36,198 DEBUG [cn.mldn.vo.mapping.NewsNS.doUpdate] - ==>  Preparing: UPDATE news SET title=? WHERE nid=? 
+2018-09-27 12:54:36,230 DEBUG [cn.mldn.vo.mapping.NewsNS.doUpdate] - ==> Parameters: 修改数据xxx  - 940094(String), 1(Integer)
+2018-09-27 12:54:36,235 DEBUG [cn.mldn.vo.mapping.NewsNS.doUpdate] - <==    Updates: 1
+2018-09-27 12:54:43,801 DEBUG [cn.mldn.vo.mapping.NewsNS.doRemove] - ==>  Preparing: DELETE FROM news WHERE nid=? 
+2018-09-27 12:54:43,841 DEBUG [cn.mldn.vo.mapping.NewsNS.doRemove] - ==> Parameters: 1(Integer)
+2018-09-27 12:54:43,844 DEBUG [cn.mldn.vo.mapping.NewsNS.doRemove] - <==    Updates: 1
+2018-09-27 12:54:48,256 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 12:54:48,295 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: MLDN  - 6562196(String), 2018-09-27 12:54:47.858(Timestamp)
+2018-09-27 12:54:48,296 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 12:54:48,298 INFO [cn.mldn.test.NewsTest] - News [nid=3, title=MLDN  - 6562196, pubdate=Thu Sep 27 12:54:47 CST 2018]
+2018-09-27 13:00:16,866 DEBUG [cn.mldn.vo.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,pub_date FROM news 
+2018-09-27 13:00:16,887 DEBUG [cn.mldn.vo.mapping.NewsNS.findAll] - ==> Parameters: 
+2018-09-27 13:00:16,904 TRACE [cn.mldn.vo.mapping.NewsNS.findAll] - <==    Columns: nid, title, pub_date
+2018-09-27 13:00:16,909 TRACE [cn.mldn.vo.mapping.NewsNS.findAll] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:00:16,910 TRACE [cn.mldn.vo.mapping.NewsNS.findAll] - <==        Row: 3, MLDN  - 6562196, 2018-09-27 12:54:47.0
+2018-09-27 13:00:16,910 DEBUG [cn.mldn.vo.mapping.NewsNS.findAll] - <==      Total: 2
+2018-09-27 13:00:16,910 INFO [cn.mldn.test.NewsTest] - [News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018], News [nid=3, title=MLDN  - 6562196, pubdate=Thu Sep 27 12:54:47 CST 2018]]
+2018-09-27 13:01:27,579 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:01:27,609 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:01:27,627 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:01:27,631 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:01:27,632 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:01:27,632 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:10:17,266 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 13:10:17,290 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: %MLDN%(String), 0(Integer), 5(Integer)
+2018-09-27 13:10:17,305 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, pub_date
+2018-09-27 13:10:17,310 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:10:17,311 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 3, MLDN  - 6562196, 2018-09-27 12:54:47.0
+2018-09-27 13:10:17,311 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 2
+2018-09-27 13:10:17,311 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2018-09-27 13:10:17,312 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==> Parameters: %MLDN%(String)
+2018-09-27 13:10:17,315 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2018-09-27 13:10:17,315 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==        Row: 2
+2018-09-27 13:10:17,316 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==      Total: 1
+2018-09-27 13:11:46,511 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:11:46,549 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: MLDN  - 72423(String), 2018-09-27 13:11:46.114(Timestamp)
+2018-09-27 13:11:46,550 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:11:46,554 INFO [cn.mldn.test.NewsTest] - News [nid=4, title=MLDN  - 72423, pubdate=Thu Sep 27 13:11:46 CST 2018]
+2018-09-27 13:11:52,439 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:11:52,474 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: MLDN  - 1210(String), 2018-09-27 13:11:52.035(Timestamp)
+2018-09-27 13:11:52,474 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:11:52,477 INFO [cn.mldn.test.NewsTest] - News [nid=5, title=MLDN  - 1210, pubdate=Thu Sep 27 13:11:52 CST 2018]
+2018-09-27 13:11:57,348 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:11:57,408 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: MLDN  - 571(String), 2018-09-27 13:11:56.908(Timestamp)
+2018-09-27 13:11:57,409 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:11:57,414 INFO [cn.mldn.test.NewsTest] - News [nid=6, title=MLDN  - 571, pubdate=Thu Sep 27 13:11:56 CST 2018]
+2018-09-27 13:12:02,444 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:12:02,481 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: java  - 954(String), 2018-09-27 13:12:02.039(Timestamp)
+2018-09-27 13:12:02,481 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:12:02,484 INFO [cn.mldn.test.NewsTest] - News [nid=7, title=java  - 954, pubdate=Thu Sep 27 13:12:02 CST 2018]
+2018-09-27 13:12:08,538 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:12:08,593 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: java-bjh  - 842(String), 2018-09-27 13:12:08.137(Timestamp)
+2018-09-27 13:12:08,594 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:12:08,596 INFO [cn.mldn.test.NewsTest] - News [nid=8, title=java-bjh  - 842, pubdate=Thu Sep 27 13:12:08 CST 2018]
+2018-09-27 13:12:26,017 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 13:12:26,043 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: %MLDN%(String), 5(Integer), 5(Integer)
+2018-09-27 13:12:26,059 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 0
+2018-09-27 13:12:26,060 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2018-09-27 13:12:26,060 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==> Parameters: %MLDN%(String)
+2018-09-27 13:12:26,060 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2018-09-27 13:12:26,061 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==        Row: 5
+2018-09-27 13:12:26,062 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==      Total: 1
+2018-09-27 13:13:35,330 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 13:13:35,357 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: %java%(String), 5(Integer), 5(Integer)
+2018-09-27 13:13:35,372 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 0
+2018-09-27 13:13:35,373 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2018-09-27 13:13:35,373 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==> Parameters: %java%(String)
+2018-09-27 13:13:35,374 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2018-09-27 13:13:35,374 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==        Row: 2
+2018-09-27 13:13:35,376 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==      Total: 1
+2018-09-27 13:14:11,770 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 13:14:11,798 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: %java%(String), 0(Integer), 5(Integer)
+2018-09-27 13:14:11,812 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, pub_date
+2018-09-27 13:14:11,818 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 7, java  - 954, 2018-09-27 13:12:02.0
+2018-09-27 13:14:11,819 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 8, java-bjh  - 842, 2018-09-27 13:12:08.0
+2018-09-27 13:14:11,820 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 2
+2018-09-27 13:14:11,820 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2018-09-27 13:14:11,821 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==> Parameters: %java%(String)
+2018-09-27 13:14:11,821 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2018-09-27 13:14:11,821 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==        Row: 2
+2018-09-27 13:14:11,822 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==      Total: 1
+2018-09-27 13:14:33,759 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 13:14:33,786 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: %mldn%(String), 0(Integer), 5(Integer)
+2018-09-27 13:14:33,803 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, pub_date
+2018-09-27 13:14:33,808 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:14:33,811 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 3, MLDN  - 6562196, 2018-09-27 12:54:47.0
+2018-09-27 13:14:33,811 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 4, MLDN  - 72423, 2018-09-27 13:11:46.0
+2018-09-27 13:14:33,812 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 5, MLDN  - 1210, 2018-09-27 13:11:52.0
+2018-09-27 13:14:33,812 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 6, MLDN  - 571, 2018-09-27 13:11:56.0
+2018-09-27 13:14:33,812 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 5
+2018-09-27 13:14:33,813 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2018-09-27 13:14:33,813 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==> Parameters: %mldn%(String)
+2018-09-27 13:14:33,814 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2018-09-27 13:14:33,814 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==        Row: 5
+2018-09-27 13:14:33,815 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==      Total: 1
+2018-09-27 13:14:54,947 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:14:54,979 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: mldn-bjh  - 925(String), 2018-09-27 13:14:54.554(Timestamp)
+2018-09-27 13:14:54,981 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:14:54,984 INFO [cn.mldn.test.NewsTest] - News [nid=9, title=mldn-bjh  - 925, pubdate=Thu Sep 27 13:14:54 CST 2018]
+2018-09-27 13:14:59,154 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:14:59,182 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: mldn-bjh  - 919(String), 2018-09-27 13:14:58.778(Timestamp)
+2018-09-27 13:14:59,182 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:14:59,186 INFO [cn.mldn.test.NewsTest] - News [nid=10, title=mldn-bjh  - 919, pubdate=Thu Sep 27 13:14:58 CST 2018]
+2018-09-27 13:15:06,856 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:15:06,893 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: mldn-bijiahao  - 192(String), 2018-09-27 13:15:06.465(Timestamp)
+2018-09-27 13:15:06,894 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:15:06,898 INFO [cn.mldn.test.NewsTest] - News [nid=11, title=mldn-bijiahao  - 192, pubdate=Thu Sep 27 13:15:06 CST 2018]
+2018-09-27 13:15:12,748 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:15:12,779 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: mldn-bijiahao1  - 114(String), 2018-09-27 13:15:12.373(Timestamp)
+2018-09-27 13:15:12,780 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:15:12,782 INFO [cn.mldn.test.NewsTest] - News [nid=12, title=mldn-bijiahao1  - 114, pubdate=Thu Sep 27 13:15:12 CST 2018]
+2018-09-27 13:15:18,602 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:15:18,634 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: mldn-bijiahao2  - 186(String), 2018-09-27 13:15:18.217(Timestamp)
+2018-09-27 13:15:18,634 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:15:18,638 INFO [cn.mldn.test.NewsTest] - News [nid=13, title=mldn-bijiahao2  - 186, pubdate=Thu Sep 27 13:15:18 CST 2018]
+2018-09-27 13:15:23,933 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,pub_date) VALUES (?,?) ; 
+2018-09-27 13:15:23,966 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - ==> Parameters: mldn-bijiahao3  - 582(String), 2018-09-27 13:15:23.549(Timestamp)
+2018-09-27 13:15:23,968 DEBUG [cn.mldn.vo.mapping.NewsNS.doCreate] - <==    Updates: 1
+2018-09-27 13:15:23,972 INFO [cn.mldn.test.NewsTest] - News [nid=14, title=mldn-bijiahao3  - 582, pubdate=Thu Sep 27 13:15:23 CST 2018]
+2018-09-27 13:15:34,446 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 13:15:34,470 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: %mldn%(String), 0(Integer), 5(Integer)
+2018-09-27 13:15:34,491 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, pub_date
+2018-09-27 13:15:34,497 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:15:34,499 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 3, MLDN  - 6562196, 2018-09-27 12:54:47.0
+2018-09-27 13:15:34,499 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 4, MLDN  - 72423, 2018-09-27 13:11:46.0
+2018-09-27 13:15:34,499 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 5, MLDN  - 1210, 2018-09-27 13:11:52.0
+2018-09-27 13:15:34,500 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 6, MLDN  - 571, 2018-09-27 13:11:56.0
+2018-09-27 13:15:34,500 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 5
+2018-09-27 13:15:34,500 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2018-09-27 13:15:34,501 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==> Parameters: %mldn%(String)
+2018-09-27 13:15:34,501 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2018-09-27 13:15:34,501 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==        Row: 11
+2018-09-27 13:15:34,504 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==      Total: 1
+2018-09-27 13:15:54,984 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE title LIKE ? LIMIT ?,? 
+2018-09-27 13:15:55,015 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - ==> Parameters: %mldn%(String), 5(Integer), 5(Integer)
+2018-09-27 13:15:55,032 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, pub_date
+2018-09-27 13:15:55,038 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 9, mldn-bjh  - 925, 2018-09-27 13:14:54.0
+2018-09-27 13:15:55,040 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 10, mldn-bjh  - 919, 2018-09-27 13:14:58.0
+2018-09-27 13:15:55,041 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 11, mldn-bijiahao  - 192, 2018-09-27 13:15:06.0
+2018-09-27 13:15:55,041 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 12, mldn-bijiahao1  - 114, 2018-09-27 13:15:12.0
+2018-09-27 13:15:55,041 TRACE [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==        Row: 13, mldn-bijiahao2  - 186, 2018-09-27 13:15:18.0
+2018-09-27 13:15:55,042 DEBUG [cn.mldn.vo.mapping.NewsNS.findAllSplit] - <==      Total: 5
+2018-09-27 13:15:55,042 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2018-09-27 13:15:55,043 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - ==> Parameters: %mldn%(String)
+2018-09-27 13:15:55,043 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2018-09-27 13:15:55,043 TRACE [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==        Row: 11
+2018-09-27 13:15:55,045 DEBUG [cn.mldn.vo.mapping.NewsNS.getAllCount] - <==      Total: 1
+2018-09-27 13:43:47,593 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:43:47,616 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:43:47,631 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:43:47,635 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:43:47,636 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:43:47,636 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=我就要改，我就喜欢改, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:43:47,639 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:43:47,639 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:43:47,640 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:43:47,640 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:43:47,641 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:43:47,641 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:44:19,480 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:44:19,502 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:44:19,518 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:44:19,522 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:44:19,523 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:44:19,523 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=我就要改，我就喜欢改, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:44:19,526 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=我就要改，我就喜欢改, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:44:28,679 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:44:28,705 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:44:28,727 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:44:28,736 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:44:28,737 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:44:28,738 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=我就要改，我就喜欢改, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:44:28,740 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:44:28,741 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:44:28,741 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:44:28,741 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:44:28,741 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:44:28,742 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:51:07,742 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:51:07,765 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:51:07,780 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:51:07,785 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:51:07,786 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:51:07,786 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:51:07,788 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 13:51:07,788 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:51:07,789 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:51:07,789 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:51:07,789 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:51:07,789 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:51:07,790 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:51:16,697 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:51:16,723 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:51:16,740 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:51:16,745 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:51:16,747 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:51:16,747 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:51:16,752 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 13:51:16,752 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:51:24,884 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:51:24,909 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:51:24,925 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:51:24,929 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:51:24,930 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:51:24,930 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:51:24,933 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 13:51:24,933 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:51:24,933 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:51:24,933 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:51:24,934 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:51:24,935 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:51:24,935 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:53:20,428 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:53:20,454 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:53:20,473 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:53:20,479 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:53:20,480 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:53:20,480 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:53:20,484 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 13:53:20,484 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:53:20,484 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:53:20,485 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:53:20,485 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:53:20,485 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:53:20,485 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:55:24,858 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:55:24,891 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:55:24,915 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:55:24,921 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:55:24,922 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:55:24,922 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:55:24,927 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 13:57:02,629 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:57:02,655 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:57:02,671 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:57:02,676 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:57:02,677 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:57:02,677 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 13:57:02,680 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 13:57:02,680 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 13:57:02,681 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 13:57:02,681 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 13:57:02,681 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 13:57:02,682 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 13:57:02,682 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:08:12,142 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:08:12,328 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:08:12,356 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:08:12,374 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:08:12,380 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:08:12,382 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:08:12,382 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:08:12,385 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:08:12,446 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.5
+2018-09-27 14:08:12,446 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:08:56,959 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:08:57,153 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:08:57,196 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:08:57,223 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:08:57,228 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:08:57,229 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:08:57,230 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:08:57,233 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:08:57,233 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:08:57,233 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:10:17,739 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:10:17,933 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:10:17,960 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:10:17,975 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:10:17,979 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:10:17,981 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:10:17,981 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:10:17,984 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:10:47,486 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:10:47,688 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:10:47,716 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:10:47,733 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:10:47,738 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:10:47,740 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:10:47,740 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:10:47,744 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:11:22,698 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:11:22,886 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:11:22,907 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:11:22,926 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:11:22,932 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:11:22,933 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:11:22,933 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:11:22,936 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:11:50,953 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:11:51,137 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:11:51,162 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:11:51,178 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:11:51,184 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:11:51,185 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:11:51,185 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:11:51,196 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:12:13,233 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:12:13,426 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:12:13,452 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:12:13,470 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:12:13,478 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:12:13,480 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:12:13,480 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:12:13,482 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:12:13,549 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.5
+2018-09-27 14:12:13,549 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:13:26,508 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:13:26,700 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:13:26,726 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:13:26,739 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:13:26,744 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:13:26,745 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:13:26,746 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:13:26,754 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:14:09,133 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:14:09,325 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:14:09,352 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:14:09,368 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:14:09,373 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:14:09,375 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:14:09,375 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:14:09,385 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:14:21,655 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:14:21,839 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:14:21,866 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:14:21,884 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:14:21,888 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:14:21,889 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:14:21,889 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:14:21,894 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:14:21,894 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:14:21,894 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:14:21,895 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:14:21,896 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:14:21,896 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:14:21,896 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:14:21,897 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:14:35,541 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.0
+2018-09-27 14:14:35,722 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:14:35,743 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:14:35,757 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:14:35,761 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:14:35,763 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:14:35,764 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:14:35,767 INFO [cn.mldn.test.NewsTest] - *****************************
+2018-09-27 14:14:35,827 DEBUG [cn.mldn.vo.mapping.NewsNS] - Cache Hit Ratio [cn.mldn.vo.mapping.NewsNS]: 0.5
+2018-09-27 14:14:35,827 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]
+2018-09-27 14:20:11,818 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==>  Preparing: SELECT nid,title,pub_date FROM news WHERE nid=? 
+2018-09-27 14:20:11,844 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - ==> Parameters: 2(Integer)
+2018-09-27 14:20:11,857 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==    Columns: nid, title, pub_date
+2018-09-27 14:20:11,863 TRACE [cn.mldn.vo.mapping.NewsNS.findById3] - <==        Row: 2, MLDN  - 6753630, 2018-09-27 12:46:59.0
+2018-09-27 14:20:11,864 DEBUG [cn.mldn.vo.mapping.NewsNS.findById3] - <==      Total: 1
+2018-09-27 14:20:11,864 INFO [cn.mldn.test.NewsTest] - News [nid=2, title=MLDN  - 6753630, pubdate=Thu Sep 27 12:46:59 CST 2018]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mldn.vo.mapping.GroupsNS">
+	<resultMap type="Groups" id="GroupsMap">
+		<id property="gid" column="gid"/>
+		<result property="title" column="title"/>
+	</resultMap> 
+	<select id="findAllByRole" parameterType="integer" resultMap="GroupsMap">
+		SELECT gid,title FROM groups
+		WHERE gid IN (
+			SELECT gid FROM role_groups WHERE rid=#{rid})
+	</select>
+</mapper>  

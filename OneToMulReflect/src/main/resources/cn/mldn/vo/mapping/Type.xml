@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mldn.vo.mapping.TypeNS">
+	<resultMap type="Type" id="TypeMap">
+		<id property="tid" column="tid"/>
+		<result property="title" column="title"/>
+		<!-- 
+		<collection property="subtypes" column="tid" javaType="java.util.List" 
+			ofType="Subtype" select="cn.mldn.vo.mapping.SubtypeNS.findAllByType"/>
+		 -->
+	</resultMap>
+	<select id="findById" parameterType="Integer" resultMap="TypeMap">
+		SELECT tid,title FROM type WHERE tid=#{tid}
+	</select>
+	<insert id="doCreate" parameterType="Type">
+		INSERT INTO type(title) VALUES (#{title}) ;
+	</insert>
+</mapper>  

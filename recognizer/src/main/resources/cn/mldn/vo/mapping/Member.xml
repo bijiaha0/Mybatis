@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mldn.vo.mapping.MemberNS">
+	<!-- 在本文件之中，如果要想描述出student、worker、member的对应关系就必须设置映射 -->
+	<resultMap type="Member" id="MemberResultMap">
+		<!-- 描述的是公共的属性的定义操作，包括了id以及两个基本的属性 -->
+		<id property="mid" column="mid"/>
+		<result property="name" column="name"/>
+		<result property="age" column="age"/>
+		<!-- 定义识别器的的操作，而后在这里面需要定义出识别器的字段 -->
+		<discriminator javaType="java.lang.String" column="flag">
+			<!-- 描述的是识别器的内容的取值 -->
+			<case value="学生" resultType="Student">
+				<result column="score" property="score"/>
+				<result column="school" property="school"/>
+			</case>
+			<case value="工人" resultType="Worker">
+				<result column="salary" property="salary"/>
+				<result column="company" property="company"/>
+			</case>
+		</discriminator>
+	</resultMap> 
+	<select id="findAllStudent" resultMap="MemberResultMap">
+		SELECT mid,name,age,school,score,flag FROM member WHERE flag='学生' ;
+	</select>
+	<select id="findAllWorker" resultMap="MemberResultMap">
+		SELECT mid,name,age,company,salary,flag FROM member WHERE flag='工人' ;
+	</select>
+	<insert id="doCreateStudent" parameterType="Student">
+		INSERT INTO member(mid,name,age,school,score,flag) VALUES (#{mid},#{name},#{age},#{school},#{score},'学生') ;
+	</insert>
+	<insert id="doCreateWorker" parameterType="Worker">
+		INSERT INTO member(mid,name,age,company,salary,flag) VALUES (#{mid},#{name},#{age},#{company},#{salary},'工人') ;
+	</insert>
+</mapper>

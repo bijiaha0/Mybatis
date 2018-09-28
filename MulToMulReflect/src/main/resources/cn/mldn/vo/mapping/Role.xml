@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mldn.vo.mapping.RoleNS">
+	<resultMap type="Role" id="RoleMap">
+		<id property="rid" column="rid"/>
+		<result property="title" column="title"/>
+		<collection property="allGroups" javaType="java.util.List" ofType="Groups"
+			select="cn.mldn.vo.mapping.GroupsNS.findAllByRole" column="rid"/>
+	</resultMap>
+	<select id="findById" parameterType="Integer" resultMap="RoleMap">
+		SELECT rid,title FROM role WHERE rid=#{rid}
+	</select>
+	<update id="doUpdate" parameterType="Role">
+		UPDATE role SET title=#{title} WHERE rid=#{rid}
+	</update>
+	<delete id="doRemoveByRole" parameterType="Integer">
+		DELETE FROM role_groups WHERE rid=#{rid}
+	</delete> 
+	<!-- 在保存完role表数据之后，就需要保存role_groups关系表，需要知道增长后的id -->
+	<insert id="doCreate" parameterType="Role" useGeneratedKeys="true" keyProperty="rid">
+		INSERT INTO role(title) VALUES (#{title}) ;
+	</insert>
+	<!-- 向关系表中保存角色与权限组的对应关系 -->
+	<insert id="doCreateRoleGroups" parameterType="RoleGroupsLink">
+		INSERT INTO role_groups(rid,gid) VALUES (#{role.rid},#{groups.gid}) ;
+	</insert>
+</mapper>   
